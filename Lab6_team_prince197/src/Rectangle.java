@@ -4,7 +4,7 @@ public class Rectangle {
 	private double width;
 	private double height;
 	
-	public void Rectangle (double x, double y) {
+	public Rectangle (double x, double y) {
 		
 	}
 	

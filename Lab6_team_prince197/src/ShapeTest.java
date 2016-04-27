@@ -1,7 +1,7 @@
 
 public class ShapeTest {
 
-	public void ShapeTest () {
+	public ShapeTest () {
 		
 	}
 	
