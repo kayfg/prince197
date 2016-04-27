@@ -20,8 +20,23 @@ public class Rectangle extends Shape{
 	
 	public void drawRectangle () {
 		
-		
-		
+		for(int i=0;i<width;i++){
+			
+			if(i==0||i==width-1)
+				System.out.print("+");
+			else
+				System.out.print("|");
+			
+			for(int j=0;j<height;j++){
+				System.out.print("-");
+			}
+			
+			if(i==0||i==width-1)
+				System.out.print("+");
+			else
+				System.out.print("|");
+			System.out.println();
+		}
 	}
 	
 	@Override 
