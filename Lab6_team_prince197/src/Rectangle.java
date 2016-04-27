@@ -20,6 +20,8 @@ public class Rectangle {
 	
 	public void drawRectangle () {
 		
+		
+		
 	}
 	
 	public void printInfo () {
