@@ -52,8 +52,10 @@ public class Triangle {
 		return side1+side2+side3;
 	}
 	
-	@Override
-	public void printInfo(){
-		
+	@Override 
+	public void printInfo() // Triangle
+	{
+		System.out.printf("Triangle with an id of %d, sides of %.6f, %.6f, and %.6f, area of %.6f, and perimeter of %.6f.", id, side1, side2, side3, calculateArea(), calculatePerimeter());
+
 	}
 }
