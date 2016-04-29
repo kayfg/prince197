@@ -21,18 +21,18 @@ public class Rectangle extends Shape{
 	
 	public void drawRectangle () {
 		
-		for(int i=0;i<(int)width;i++){
-			
-			if(i==0||i==((int)width)-1)
-				System.out.print("+");
+		for(int i=0;i<(int)width;i++){ 		//int cast to draw a line only by at full number (**)
+											//ex 5.99=>5 lines, 6.12=>6 lines
+			if(i==0||i==((int)width)-1)		//cast to draw the first sign right!
+				System.out.print("+");		
 			else
 				System.out.print("|");
 			
-			for(int j=0;j<height;j++){
-				System.out.print("-");
+			for(int j=0;j<(int)height;j++){ //(**)
+				System.out.print("-");		
 			}
 			
-			if(i==0||i==((int)width)-1)
+			if(i==0||i==((int)width)-1)		//cast to draw the last sign right!
 				System.out.print("+");
 			else
 				System.out.print("|");
