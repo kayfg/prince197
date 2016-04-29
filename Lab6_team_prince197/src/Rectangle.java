@@ -21,9 +21,9 @@ public class Rectangle extends Shape{
 	
 	public void drawRectangle () {
 		
-		for(int i=0;i<width;i++){
+		for(int i=0;i<(int)width;i++){
 			
-			if(i==0||i==width-1)
+			if(i==0||i==((int)width)-1)
 				System.out.print("+");
 			else
 				System.out.print("|");
@@ -32,7 +32,7 @@ public class Rectangle extends Shape{
 				System.out.print("-");
 			}
 			
-			if(i==0||i==width-1)
+			if(i==0||i==((int)width)-1)
 				System.out.print("+");
 			else
 				System.out.print("|");

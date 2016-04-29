@@ -9,7 +9,7 @@ public class ShapeTest {
 	
 		Shape[] shape = new Shape[3];
 		int i=0;
-		shape[0] = new Rectangle(2, 5.01);
+		shape[0] = new Rectangle(10, 6.23);
 		shape[1] = new Circle(5);
 		shape[2] = new Triangle(3, 3, 5);
 		
