@@ -8,16 +8,24 @@ public class ShapeTest {
 	public void start () {
 	
 		Shape[] shape = new Shape[3];
+		int i=0;
+		shape[0] = new Rectangle(2, 5);
+		shape[1] = new Circle(5);
+		shape[2] = new Triangle(1, 2, 3);
 		
-		shape[0] = new Rectangle();
-		shape[1] = new Circle();
-		shape[2] = new Triangle();
-		
-		for (x: shape) 
-			x.processShape();
+		for (Shape x: shape){
+			x.setId(i++);
+			processShape(x);}
 	}
 	
-	
+	public void processShape (Shape shape) {
+		
+		 shape.printInfo();
+		 
+		 if (shape instanceof Rectangle) {
+			 ((Rectangle)shape).drawRectangle();
+		 }
+	}
 	
 	
 	
@@ -30,14 +38,7 @@ public class ShapeTest {
 		
 	}
 	
-	public void processShape (Shape shape) {
-		
-		 shape.printInfo();
-		 
-		 if (shape instanceof Rectangle) {
-			 shape.drawRectanle();
-		 }
-	}
+	
 	
 
 }

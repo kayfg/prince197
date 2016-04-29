@@ -55,7 +55,7 @@ public class Triangle extends Shape{
 	@Override 
 	public void printInfo() // Triangle
 	{
-		System.out.printf("Triangle with an id of %d, sides of %.6f, %.6f, and %.6f, area of %.6f, and perimeter of %.6f.", getId(), side1, side2, side3, calculateArea(), calculatePerimeter());
+		System.out.printf("Triangle with an id of %d, sides of %.6f, %.6f, and %.6f, area of %.6f, and perimeter of %.6f.\n", getId(), side1, side2, side3, calculateArea(), calculatePerimeter());
 
 	}
 }
