@@ -11,7 +11,7 @@ public class ShapeTest {
 		int i=0;
 		shape[0] = new Rectangle(2, 5);
 		shape[1] = new Circle(5);
-		shape[2] = new Triangle(1, 2, 3);
+		shape[2] = new Triangle(3, 3, 5);
 		
 		for (Shape x: shape){
 			x.setId(i++);

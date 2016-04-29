@@ -44,7 +44,8 @@ public class Triangle extends Shape{
 	
 	@Override
 	public double calculateArea(){
-		return (side1*side2)/2;		// definition right-angled triangle
+		double u=(side1+side2+side3)/2;
+		return Math.sqrt(u*(u-side1)*(u-side2)*(u-side3));		// definition right-angled triangle
 	}
 	
 	@Override
